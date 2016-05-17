@@ -1,7 +1,7 @@
 FROM williamyeh/ansible:ubuntu14.04
 
 WORKDIR /tmp
-COPY  .  /tmp
+COPY  ansible_files/.  /tmp
 
 RUN echo localhost > inventory
 
