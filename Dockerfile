@@ -5,4 +5,4 @@ COPY  ansible_files/.  /tmp
 
 RUN echo localhost > inventory
 
-RUN ansible-playbook -i inventory playbook.yml --connection=local --sudo
+RUN ansible-playbook -i hosts rancher.yml --connection=local --sudo
