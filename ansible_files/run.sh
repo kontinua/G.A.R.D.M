@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo localhost > inventory.ini
+
 docker run \
 --rm --name ansible-runner \
 -v "$PWD"/playbook.yml:/playbook.yml \
